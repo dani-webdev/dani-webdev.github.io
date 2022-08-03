@@ -1,0 +1,148 @@
+/*Pagina principal*/
+
+.fondo_fuerte {
+    background-image: url("Imagenes/fondo_web.jpg");
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    color: hsl(258, 100%, 43%);
+    margin-top: 160px;
+    margin-left: 200px;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: hsl(258, 100%, 43%);
+    margin-top: -25px;
+    margin-left: 408px;
+}
+
+#descripcion {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: hsl(277, 100%, 44%);
+    margin-top: -130px;
+    margin-left: 790px;
+    margin-right: 200px;
+}
+
+p span {
+    background-color: hsl(174, 100%, 93%);
+}
+
+a.subrayado {
+    background-color: hsl(277, 100%, 44%);
+    color: hsl(174, 100%, 93%);
+}
+
+#link1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: hsl(174, 100%, 93%);
+    margin-top: 75px;
+    margin-left: 610px;
+
+}
+
+#link2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: hsl(174, 100%, 93%);
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+/*Trabajos*/
+
+#trabajos {
+    background: url("Imagenes/fondo super claro.jpg");
+}
+
+#titulo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color:   hsl(258, 100%, 43%);
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+    
+}
+
+img {
+    height: 460px;
+    padding-right: 30px;
+}
+
+#gallery {
+    margin-left: 45px;
+    margin-top: 90px;
+}
+
+/* Contacto */
+
+span.subrayado {
+    background-color: hsl(277, 100%, 44%);
+}
+
+#contacto {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color:  hsl(258, 100%, 43%);
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+p.formulario {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: hsl(174, 100%, 93%);
+    
+}
+
+div.formulario {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+input[type=text] {
+    background-color: white;
+    border: none;
+    padding-top: 8px;
+    margin-inline-start: 8px;
+    vertical-align: bottom;
+}
+
+textarea {
+    vertical-align: top;
+    height: 110px;
+    background-color: white;
+    border: none;
+    margin-inline-start: 8px;
+    padding-bottom: 20px;
+}
+
+input[type=submit] {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: hsl(277, 100%, 44%);
+    background-color: hsl(174, 100%, 93%);
+    border-color: hsl(277, 100%, 44%);
+    border-style: solid;
+}
