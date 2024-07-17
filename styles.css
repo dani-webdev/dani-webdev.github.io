@@ -1,148 +1,72 @@
-/*Pagina principal*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-.fondo_fuerte {
-    background-image: url("Imagenes/fondo_web.jpg");
-}
+body {
+    font-family: Space Grotesk, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
-h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 3.5em;
-    color: hsl(258, 100%, 43%);
-    margin-top: 160px;
-    margin-left: 200px;
-}
-
-h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: 2em;
-    color: hsl(258, 100%, 43%);
-    margin-top: -25px;
-    margin-left: 408px;
-}
-
-#descripcion {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-    color: hsl(277, 100%, 44%);
-    margin-top: -130px;
-    margin-left: 790px;
-    margin-right: 200px;
-}
-
-p span {
-    background-color: hsl(174, 100%, 93%);
-}
-
-a.subrayado {
-    background-color: hsl(277, 100%, 44%);
-    color: hsl(174, 100%, 93%);
-}
-
-#link1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: 1.4em;
-    color: hsl(174, 100%, 93%);
-    margin-top: 75px;
-    margin-left: 610px;
-
-}
-
-#link2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: 1.4em;
-    color: hsl(174, 100%, 93%);
-    margin-top: 20px;
-    margin-left: 600px;
-}
-
-/*Trabajos*/
-
-#trabajos {
-    background: url("Imagenes/fondo super claro.jpg");
-}
-
-#titulo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    color:   hsl(258, 100%, 43%);
-    margin-top: 45px;
-    margin-left: 45px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 25px;
-    
-}
-
-img {
-    height: 460px;
-    padding-right: 30px;
-}
-
-#gallery {
-    margin-left: 45px;
-    margin-top: 90px;
-}
-
-/* Contacto */
-
-span.subrayado {
-    background-color: hsl(277, 100%, 44%);
-}
-
-#contacto {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    color:  hsl(258, 100%, 43%);
-    margin-top: 45px;
-    margin-left: 45px;
-}
-
-p.formulario {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: hsl(174, 100%, 93%);
-    
-}
-
-div.formulario {
-    margin-left: 150px;
+  
+  .container-above {
     margin-top: 80px;
-}
+    margin-bottom: 60px;
+    margin-left: 300px;
+    margin-right: 300px; /* Add margins on each side */
+    padding: 20px;
+    text-align: center; /* Center content horizontally */
+  }
 
-input[type=text] {
-    background-color: white;
-    border: none;
-    padding-top: 8px;
-    margin-inline-start: 8px;
-    vertical-align: bottom;
-}
+  .container-above img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is block-level element */
+    margin: 0 auto; /* Center image horizontally */
+  }
+  
+  .text-right {
+    position: absolute; /* Position relative to container */
+     /* Adjust top position */
+    right: 20px; /* Adjust right position */
+    text-align: right; /* Align text to the right */
+  }
 
-textarea {
-    vertical-align: top;
-    height: 110px;
-    background-color: white;
-    border: none;
-    margin-inline-start: 8px;
-    padding-bottom: 20px;
-}
+  .container {
+    display: flex;
+    margin: 0 200px; /* Add margins on each side */
+  }
+  
+  .column-1 {
+    flex: 2; /* Takes 2/3 of the container */
+    padding: 20px;
+  }
 
-input[type=submit] {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: hsl(277, 100%, 44%);
-    background-color: hsl(174, 100%, 93%);
-    border-color: hsl(277, 100%, 44%);
-    border-style: solid;
-}
+  .column-1 img {
+    max-width: 100%; /* Ensure image doesn't exceed column width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Optional: Add space below the image */
+  }
+  
+  .column-2 {
+    flex: 1; /* Takes 1/3 of the container */
+    padding: 20px;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px;
+    margin-bottom: 5px; /* Optional: Add space below the grid */
+  
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure images cover the grid cells */
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+  }
+
+  .image-grid img:hover {
+    transform: scale(1.4); /* Zoom in on hover */
+  }
