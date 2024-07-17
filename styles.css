@@ -62,11 +62,6 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
-  transition: transform 0.3s ease; 
-}
-
-.image-grid img:hover {
-  transform: scale(1.4); 
 }
 
 @media (max-width: 768px) {
