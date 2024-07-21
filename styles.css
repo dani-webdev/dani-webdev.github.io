@@ -7,12 +7,18 @@ body {
 }
 
 .container-above {
-  margin-top: 80px;
-  margin-bottom: 60px;
-  margin-left: 300px;
-  margin-right: 300px; 
-  padding: 20px;
-  text-align: center; 
+  margin-top: 60px;
+  margin-bottom: 110px;
+  margin-left: 320px;
+  margin-right: 320px; 
+  padding: 10px;
+  text-align: left; 
+}
+
+h1 {
+  font-size: 3vw ;
+  font-weight: 500;
+  color: #A67EB7;
 }
 
 .container-above img {
@@ -20,6 +26,10 @@ body {
   height: auto; 
   display: block; 
   margin: 0 auto; 
+}
+
+h2 {
+  font-weight: 500;
 }
 
 .text-right {
@@ -64,6 +74,41 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 1060px) and (min-width: 769px) {
+   .container {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .container-above {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+  }
+
+  .column-1, .column-2 {
+    padding: 10px; 
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr); 
+    margin-bottom: 20px;
+  }
+
+  .image-grid img {
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 5.2vw ;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+}
+
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -73,6 +118,7 @@ body {
   .container-above {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 60px;
   }
 
   .column-1, .column-2 {
@@ -81,5 +127,21 @@ body {
 
   .image-grid {
     grid-template-columns: repeat(1, 1fr); 
+    margin-bottom: 20px;
   }
+
+  .image-grid img {
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 5.2vw ;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+  
 }
+
+
